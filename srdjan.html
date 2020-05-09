@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        
+        <script>
+            var data = [
+               {
+                  "order":1,
+                  "dataPostId":16492247,
+                  "description":"Grey cat cuddle from the back",
+                  "story":"Da Two Happy Kitties"
+               },
+               {
+                  "order":2,
+                  "dataPostId":14819416,
+                  "description":"Cat dragging cat",
+                  "story":"Da white kitty and da gray kitty met while playing games. (The chinese words say come and play games with me quiccckkkkk)"
+               },
+               {
+                  "order":3,
+                  "dataPostId":14819437,
+                  "description":"two happy kitties",
+                  "story":"One day, the white kitty and the grey kitty met irl in a cold upstate new york city. That was a very happy day for the both of them"
+               },
+               {
+                  "order":4,
+                  "dataPostId":13985230,
+                  "description":"White cat running up to grey cat",
+                  "story":"And then they met again"
+               },
+               {
+                  "order":5,
+                  "dataPostId":13989786,
+                  "description":"gray cat cuddle and kiss white cat in tango position",
+                  "story":"And again..."
+               },
+               {
+                  "order":6,
+                  "dataPostId":15951377,
+                  "description":"white cat run up to grey cat on phone and do cuddle",
+                  "story":"And again (with some sneak attac cuz Daddee is looking at his phone =3)"
+               },
+               {
+                  "order":7,
+                  "dataPostId":15310654,
+                  "description":"white cat biting on gray cat",
+                  "story":"The two kitties just loved each other's company and could nevar get enough of each other"
+               },
+               {
+                  "order":8,
+                  "dataPostId":17024116,
+                  "description":"frames doing random things",
+                  "story":"Da white kitty and da gray kitty just had so much in common and they loved doing all sorts of things with each other"
+               },
+               {
+                  "order":9,
+                  "dataPostId":15232847,
+                  "description":"Two cats on a wool ball",
+                  "story":"They loved playing together"
+               },
+               {
+                  "order":10,
+                  "dataPostId":13994717,
+                  "description":"cat Scare",
+                  "story":"Doing da biiiig sneak attacs on each other (mostly da white kitty scaring da gray kitty :3)"
+               },
+               {
+                  "order":11,
+                  "dataPostId":15230898,
+                  "description":"naughty white cat on gray cat",
+                  "story":"Teasing each other >.<"
+               },
+               {
+                  "order":11,
+                  "dataPostId":16437000,
+                  "description":"white cat and gray cat looking and gray cat phone",
+                  "story":"Watching movies together"
+               },
+               {
+                  "order":12,
+                  "dataPostId":13806522,
+                  "description":"cat sleeping together",
+                  "story":"Sleeping together"
+               },
+               {
+                  "order":14,
+                  "dataPostId":15308590,
+                  "description":"White Cat spank gray cat",
+                  "story":"Punishing each other"
+               },
+               {
+                  "order":15,
+                  "dataPostId":17001571,
+                  "description":"gray cat spanking white cat",
+                  "story":"Of course da gray kitty has to punish his naughtee little girl too =3"
+               },
+               {
+                  "order":16,
+                  "dataPostId":16526972,
+                  "description":"two cat crying belly full",
+                  "story":"And they even loved crying together after they've both ate tooooo much (probably cuz da kfc is soooo good)"
+               },
+               {
+                  "order":17,
+                  "dataPostId":16014629,
+                  "description":"happy bouncy cat",
+                  "story":"Just look at how happy Daddee kitty makes his Babygirl"
+               },
+               {
+                  "order":18,
+                  "dataPostId":16752637,
+                  "description":"grey cat laugh till die",
+                  "story":"And how happy Babygirl kitty made her Daddee kitty!"
+               },
+               {
+                  "order":19,
+                  "dataPostId":15943454,
+                  "description":"white cat talking on phone",
+                  "story":"Even when they weren't together in person they would talk every night"
+               },
+               {
+                  "order":20,
+                  "dataPostId":16996118,
+                  "description":"grey cat encourage",
+                  "story":"And they were super encouraging to each other in their everyday lives"
+               },
+               {
+                  "order":21,
+                  "dataPostId":15248621,
+                  "description":"Cat eating pizza",
+                  "story":"And of course da white kitty had to tease da grey kitty with lots of food pics and videos"
+               },
+               {
+                  "order":22,
+                  "dataPostId":15943254,
+                  "description":"cat eating newdlez",
+                  "story":"Especially da big newdle tease :3"
+               },
+                {
+                  "order":22,
+                  "dataPostId":15951323,
+                  "description":"white kitty laughing",
+                  "story":"And don't forget da calling Daddee a huuuuuge weeb >.<"
+               },
+               {
+                  "order":23,
+                  "dataPostId":16510779,
+                  "description":"We are the perfect couple we're just not in the perfect situation",
+                  "story":"But then one day a global pandemic happened, and da white kitty and da grey kitty couldn't see each other for a long time"
+               },
+               {
+                  "order":24,
+                  "dataPostId":17125157,
+                  "description":"I can't sleep, i really miss us sleeping so good",
+                  "story":"And Babygirl kitty missed her Daddee kitty soooo much"
+               },
+               {
+                  "order":25,
+                  "dataPostId":14819506,
+                  "description":"Grey cat sad",
+                  "story":"And Daddee kitty missed his Babygirl kitty soooo much too"
+               },
+               {
+                  "order":26,
+                  "dataPostId":13806532,
+                  "description":"Grey cat blow kiss",
+                  "story":"And instead of kissing they could only blow each other kisses"
+               },
+                {
+                  "order":26,
+                  "dataPostId":14819413,
+                  "description":"Grey cat blow kiss",
+                  "story":"And of course da white kitty blew her Daddee loooots of kisses too"
+               },
+               {
+                  "order":27,
+                  "dataPostId":16485846,
+                  "description":"Waiting patiently because this will be good",
+                  "story":"But da gray kitty and da white kitty will (im)patiently wait to see each other again. They looked forward to many things..."
+               },
+               {
+                  "order":28,
+                  "dataPostId":13985240,
+                  "description":"grey cat tap and kiss white cat",
+                  "story":"To da grey kitty sneaking kisses at da white kitty while they were walking around the city hand in hand"
+               },
+               {
+                  "order":29,
+                  "dataPostId":14541090,
+                  "description":"cat sneaking up from bed",
+                  "story":"To da white kitty hiding under da covers from her Daddee"
+               },
+                {
+                  "order":29,
+                  "dataPostId":16529335,
+                  "description":"grey cat banging white cat",
+                  "story":"To da Daddee kitty trying to wake babygirl up and tickling her to make her shower"
+               },
+               {
+                  "order":30,
+                  "dataPostId":14292937,
+                  "description":"white cat skipping",
+                  "story":"To da Babygirl kitty recommending da skipping :3"
+               },
+               {
+                  "order":31,
+                  "dataPostId":15951218,
+                  "description":"White kitty tease",
+                  "story":"To da escalator teases... (Da white kitty is tooootally da boss!)"
+               },
+                {
+                  "order":31,
+                  "dataPostId":14819560,
+                  "description":"hair rub",
+                  "story":"To da hair rubz"
+               },
+               {
+                  "order":32,
+                  "dataPostId":17125477,
+                  "description":"White kitty and gray kitty cuddle",
+                  "story":"To da huuuuuugee cuddlez"
+               },
+               {
+                  "order":33,
+                  "dataPostId":13806533,
+                  "description":"White kitty kiss grey kitty",
+                  "story":"And da in person kisses"
+               },
+               {
+                  "order":34,
+                  "dataPostId":17125482,
+                  "description":"Cat kiss and sleep",
+                  "story":"And they looked forward to sleeping together again"
+               },
+               {
+                  "order":35,
+                  "dataPostId":16590631,
+                  "description":"Happy white cat",
+                  "story":"I'll be this happy when we meet again <3"
+               },
+               {
+                  "order":37,
+                  "dataPostId":13948999,
+                  "description":"bflsm kiss",
+                  "story":"Have this huuuuuge bflsm kiss. I love you da most <3 <br> :o   Oh no da bears are invading da kitty story xD"
+               },
+               {
+                  "order":36,
+                  "dataPostId":14819423,
+                  "description":"cat birthday cake",
+                  "story":"Happy Birthday Daddee!"
+               }
+            ];
+            // sort data by order first
+            data.sort((a,b) => a.order - b.order);
+            let pageNum = 0;
+            executeGifScript= () => {
+                var s = document.createElement('script');
+                s.type="text/javascript";
+                s.src = "https://tenor.com/embed.js";
+                document.querySelector('#data').appendChild(s);
+            }
+            displayCurrentCard = (pageNum) => {
+                document.querySelector('#data').innerHTML = 
+                `
+                        <div class="row book">
+                            <div class="col-6">
+                                <div class="tenor-gif-embed" data-postid=${data[pageNum].dataPostId} data-share-method="host" data-width="100%" data-aspect-ratio="1.4310344827586208"></div>
+                            </div>
+                            <div class= "col-6">
+                                <p>${data[pageNum].story}</p>
+                            </div>
+                        </div>
+                `;
+                executeGifScript();
+            }
+            displayPageNum = (pageNum) => {
+                document.querySelector('#pageNum'). innerHTML = pageNum === 0? '<h3>Title</h3>' : `<h4>Page ${pageNum}</h4>`;
+            }
+            displayPage = (pageNum) => {
+                displayCurrentCard(pageNum);
+                displayPageNum(pageNum);
+            }
+            togglePrevButton = (display) => {
+                document.querySelector('#prev').style.visibility = display;
+            }
+            toggleNextButton = (display) => {
+                document.querySelector('#next').style.visibility = display;
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+
+                
+//               data.forEach( item => {
+//                  document.querySelector('#content').innerHTML += 
+//                       `<div class="row book">
+//                            <div class="col-6">
+//                                <div class="tenor-gif-embed" data-postid=${item.dataPostId} data-share-method="host" data-width="100%" data-aspect-ratio="1.4310344827586208"></div>
+//                            </div>
+//                            <div class= "col-6">
+//<p>${item.order}</p>
+//<p>${item.story}</p>
+//                            </div>
+//                        </div>
+//`
+                
+                displayPage(pageNum);
+                togglePrevButton('hidden');
+                
+                document.querySelector('#prev').addEventListener('click', () => {
+                   displayPage(--pageNum); 
+                    pageNum < data.length-1 && toggleNextButton('visible');
+                    pageNum === 0 && togglePrevButton('hidden');
+                    
+                });
+                document.querySelector('#next').addEventListener('click', () => {
+                   displayPage(++pageNum); 
+                    pageNum >= 0 && togglePrevButton('visible');
+                    pageNum === data.length-1 && toggleNextButton('hidden');
+                });
+            });
+                
+              
+            
+        </script>
+        <style>
+            .book{
+                margin:20px auto;  
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 2%;
+            }
+            .tenor-gif-embed{
+                border: 1px solid gray;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container p-2 text-center" id="content">
+            <script type="text/javascript" src="https://tenor.com/embed.js"></script>
+            <div id = "data"></div>
+            <div class="row">
+                <div class= "col-4">
+                    <button class = "btn btn-dark col-6" id="prev">Previous</button>
+                </div>
+                <div class = "col-4" >
+                    <button class = "btn" id = "pageNum"></button>
+                </div>
+                <div class = "col-4">
+                    <button class = "btn btn-dark col-6" id="next">Next</button>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
